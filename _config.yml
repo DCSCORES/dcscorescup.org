@@ -1,0 +1,34 @@
+---
+title: DC SCORES Cup Beta
+timezone: UTC
+email: your-email@domain.com
+description: Write an awesome description for your new site here.
+baseurl:
+url:
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+excerpt_separator: |2+
+
+port: 4200
+
+future: true
+permalink: pretty
+
+sass:
+  sass_dir: styles/
+  style: compressed
+
+per_page: 12
+date_format: "%b %d, %Y"
+
+gems:
+- jekyll-seo-tag
+- jekyll-sitemap
+exclude:
+- Gemfile
+- Gemfile.lock
+- README.markdown
+- .gitignore
