@@ -3,13 +3,20 @@
 \*------------------------------------*/
 
 .BaggageCarousel {
-  padding: 1rem;
+  list-style: none;
+  margin: 0;
+
+  padding-top: 1rem;
+  padding-right: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
 
   background-color: #EEEEEE;
 }
 
   .BaggageCarousel-suitcase {
     margin-right: 1rem;
+    padding: 0;
 
     width: 4rem;
     height: 4rem;
