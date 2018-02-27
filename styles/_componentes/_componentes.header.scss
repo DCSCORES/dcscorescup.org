@@ -1,3 +1,15 @@
 /*------------------------------------*\
     #HEADER
 \*------------------------------------*/
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+
+  background-color: green;
+
+  z-index: 9000;
+}
