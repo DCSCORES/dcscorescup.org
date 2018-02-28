@@ -1,3 +1,27 @@
 /*------------------------------------*\
     #HEADER
 \*------------------------------------*/
+
+header {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem 1.5rem 1rem 1.5rem;
+
+  width: 100%;
+
+  background-color: #D0B3A3;
+
+  @media (min-width: 600px) {
+    padding: 2rem 2rem 2rem 4rem;
+  }
+}
+
+  header > a {
+    display: block;
+    align-self: flex-start;
+
+    background-color: rgb(195, 152, 133);
+  }
+
+    header > a img {}

@@ -1,3 +1,53 @@
 /*------------------------------------*\
     #NAV
 \*------------------------------------*/
+
+nav {
+  display: flex;
+  flex-direction: column;
+
+  background-color: rgb(213, 188, 173);
+
+  @media (min-width: 600px) {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+  nav a {
+    display: block;
+
+    font-size: 1rem;
+    text-decoration: none;
+    color: #222;
+
+    background-color: rgb(195, 152, 133);
+  }
+
+  nav a:nth-last-child(2) {
+    color: darkviolet;
+
+    @media (min-width: 500px) {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      text-align: center;
+      line-height: 4.5rem;
+
+      background-color: black;
+    }
+  }
+
+  nav a:last-child {
+    color: pink;
+
+    @media (min-width: 500px) {
+      width: 4.5rem;
+      height: 4.5rem;
+
+      text-align: center;
+      line-height: 4.5rem;
+
+      background-color: black;
+    }
+  }
