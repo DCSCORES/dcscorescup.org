@@ -6,22 +6,71 @@ header {
   display: flex;
   justify-content: space-between;
 
-  padding: 1rem 1.5rem 1rem 1.5rem;
+  padding: 1rem 1rem 1rem 1rem;
 
   width: 100%;
 
-  background-color: #D0B3A3;
+  background-color: #FAFAFA;
+
+  @media (min-width: 400px) {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
 
   @media (min-width: 600px) {
-    padding: 2rem 2rem 2rem 4rem;
+    padding: 2rem 2rem 2rem 2rem;
   }
 }
 
   header > a {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     align-self: flex-start;
 
-    background-color: rgb(195, 152, 133);
+    max-width: 11rem;
+
+    text-decoration: none;
+    background-color: #d5bcad;
+
+    @media (min-width: 400px) {
+      max-width: 12rem;
+    }
+
+    @media (min-width: 600px) {
+      max-width: 14rem;
+    }
+
+    @media (min-width: 800px) {
+      max-width: 16rem;
+    }
   }
 
-    header > a img {}
+    header > a img {
+      width: 11rem;
+
+      background-color: darken(#d5bcad, 5%);
+
+      @media (min-width: 400px) {
+        width: 12rem;
+      }
+
+      @media (min-width: 600px) {
+        width: 14rem;
+      }
+
+      @media (min-width: 800px) {
+        width: 16rem;
+      }
+    }
+
+    header > a span {
+      font-size: 16px;
+      line-height: 1;
+      color: black;
+
+      background-color: darken(#d5bcad, 15%);
+
+      @media (min-width: 800px) {
+        font-size: 20px;
+      }
+    }

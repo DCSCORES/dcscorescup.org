@@ -6,9 +6,7 @@ nav {
   display: flex;
   flex-direction: column;
 
-  background-color: rgb(213, 188, 173);
-
-  @media (min-width: 600px) {
+  @media (min-width: 1000px) {
     flex-direction: row;
     align-items: center;
   }
@@ -17,37 +15,70 @@ nav {
   nav a {
     display: block;
 
-    font-size: 1rem;
-    text-decoration: none;
-    color: #222;
+    /* Middle-alignment fix bc of font dimensions */
+    padding-top: 0.25rem;
 
-    background-color: rgb(195, 152, 133);
+    font-family: "DCSCORES", sans-serif;
+    font-size: 18px;
+    line-height: 1;
+    text-decoration: none;
+    text-align: right;
+    color: #43100A;
+
+    background-color: #d5bcad;
+
+    @media (min-width: 400px) {
+      font-size: 20px;
+    }
+  }
+
+  nav a:not(:first-child) {
+    margin-top: 0.5rem;
+
+    @media (min-width: 600px) {
+      margin-top: 0.75rem;
+    }
+
+    @media (min-width: 800px) {
+      margin-top: 1rem;
+    }
+
+    @media (min-width: 1000px) {
+      margin-top: 0;
+      margin-left: 2rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-left: 2.5rem;
+    }
+  }
+
+  nav a:nth-last-child(2),
+  nav a:last-child {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: 500px) {
+      width: 6.5rem;
+      height: 6.5rem;
+
+      border-radius: 100%;
+    }
   }
 
   nav a:nth-last-child(2) {
-    color: darkviolet;
 
     @media (min-width: 500px) {
-      width: 4.5rem;
-      height: 4.5rem;
-
-      text-align: center;
-      line-height: 4.5rem;
-
-      background-color: black;
+      background-color: #d5bcad;
     }
+
   }
 
   nav a:last-child {
-    color: pink;
 
     @media (min-width: 500px) {
-      width: 4.5rem;
-      height: 4.5rem;
-
-      text-align: center;
-      line-height: 4.5rem;
-
-      background-color: black;
+      background-color: darken(#d5bcad, 20%);
     }
+
   }
