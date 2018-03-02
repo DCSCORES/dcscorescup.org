@@ -1,0 +1,40 @@
+/*------------------------------------*\
+    #MOVIE THEATER
+\*------------------------------------*/
+
+.MovieTheater {
+  background-color: #d5bcad;
+}
+
+  .MovieTheater-screen {
+    position: relative;
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+  }
+
+    .MovieTheater-screen img {
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      cursor: pointer;
+
+      object-fit: cover;
+      object-position: 50% 50%;
+    }
+
+    .MovieTheater-screen iframe {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
