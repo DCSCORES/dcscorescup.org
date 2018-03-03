@@ -1,1 +1,1 @@
-# DCSCORESCup.github.io
+# DC SCORES Cup
