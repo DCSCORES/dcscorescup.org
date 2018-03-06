@@ -13,7 +13,7 @@ function() {
 
 function moviePoster(id) {
   var moviePoster = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">';
-  var startTheMovie = '<div class="play"></div>';
+  var startTheMovie = '<div></div>';
   return moviePoster.replace("ID", id) + startTheMovie;
 }
 

@@ -6,6 +6,9 @@ nav {
   display: flex;
   flex-direction: column;
 
+  /* Overflow the video if necessary */
+  z-index: 9000;
+
   @media (min-width: 1000px) {
     flex-direction: row;
     align-items: center;

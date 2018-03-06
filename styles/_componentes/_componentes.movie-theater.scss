@@ -3,18 +3,36 @@
 \*------------------------------------*/
 
 .MovieTheater {
+  position: relative;
   background-color: #d5bcad;
+
+  @media (min-width: 500px) {
+    padding-right: 6rem;
+    padding-left: 1.5rem;
+  }
+
+  @media (min-width: 600px) {
+    padding-right: 6rem;
+    padding-left: 2rem;
+  }
 }
 
   .MovieTheater-screen {
     position: relative;
-    width: 100%;
 
     &:after {
       content: "";
       display: block;
       padding-bottom: 56.25%;
       height: 0;
+    }
+
+    @media (min-width: 500px) {
+      margin-top: -12rem;
+    }
+
+    @media (min-width: 600px) {
+      margin-top: -12rem;
     }
   }
 
@@ -28,6 +46,35 @@
 
       object-fit: cover;
       object-position: 50% 50%;
+    }
+
+    .MovieTheater-screen img:hover {
+      filter: brightness(75%);
+    }
+
+    /* Yes, that is the selection I'll use, suck it */
+    .MovieTheater-screen div div {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      width: 4.5rem;
+      height: 4.5rem;
+
+      pointer-events: none;
+
+      background-color: pink;
+      background-image: url(../icons/play.svg);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain;
+
+      transform: translate(-50%, -50%);
+
+      @media (min-width: 800px) {
+        width: 5rem;
+        height: 5rem;
+      }
     }
 
     .MovieTheater-screen iframe {
