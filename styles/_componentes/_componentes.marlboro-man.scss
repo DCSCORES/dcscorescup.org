@@ -1,0 +1,44 @@
+/*------------------------------------*\
+    #MARLBORO MAN
+\*------------------------------------*/
+
+.MarlboroMan {
+  padding: 1rem 1rem 1rem 1rem;
+
+  width: 100%;
+
+  background-color: pink;
+
+  @media (min-width: 400px) {
+    padding: 1rem 1.5rem 1rem 1.5rem;
+  }
+
+  @media (min-width: 600px) {
+    padding: 2rem 2rem 2rem 2rem;
+  }
+}
+
+  .MarlboroMan h1 {
+
+    @media (min-width: 600px) {
+      font-size: 6vw;
+    }
+
+    @media (min-width: 1000px) {
+      width: 70vw;
+      font-size: 72px;
+    }
+  }
+
+  .MarlboroMan p {
+
+    @media (min-width: 600px) {
+      width: 80%;
+      font-size: 3.2vw;
+      line-height: 1.2;
+    }
+
+    @media (min-width: 1000px) {
+      font-size: 39px;
+    }
+  }

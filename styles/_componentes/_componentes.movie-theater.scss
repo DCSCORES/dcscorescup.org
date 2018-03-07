@@ -9,6 +9,17 @@
   @media (min-width: 500px) {
     padding-right: 6rem;
     padding-left: 1.5rem;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+      width: 50%;
+      height: 100%;
+      background-color: indigo;
+    }
   }
 
   @media (min-width: 600px) {
