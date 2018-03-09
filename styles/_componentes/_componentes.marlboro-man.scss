@@ -16,6 +16,10 @@
   @media (min-width: 600px) {
     padding: 2rem 2rem 2rem 2rem;
   }
+
+  @media (min-width: 1200px) {
+    padding: 2.75rem 2.75rem 2.75rem 2.75rem;
+  }
 }
 
   .MarlboroMan h1 {
@@ -27,6 +31,7 @@
     @media (min-width: 1000px) {
       width: 70vw;
       font-size: 72px;
+      color: blue;
     }
   }
 
@@ -40,5 +45,6 @@
 
     @media (min-width: 1000px) {
       font-size: 39px;
+      color: lime;
     }
   }

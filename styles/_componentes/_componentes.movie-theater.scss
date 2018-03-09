@@ -18,13 +18,18 @@
       display: block;
       width: 50%;
       height: 100%;
-      background-color: indigo;
+      background-color: pink;
     }
   }
 
   @media (min-width: 600px) {
     padding-right: 6rem;
     padding-left: 2rem;
+  }
+
+  @media (min-width: 1200px) {
+    padding-right: 8rem;
+    padding-left: 2.75rem;
   }
 }
 
@@ -39,11 +44,15 @@
     }
 
     @media (min-width: 500px) {
-      margin-top: -12rem;
+      margin-top: -11rem;
     }
 
     @media (min-width: 600px) {
       margin-top: -12rem;
+    }
+
+    @media (min-width: 1000px) {
+      margin-top: 0;
     }
   }
 
@@ -85,6 +94,16 @@
       @media (min-width: 800px) {
         width: 5rem;
         height: 5rem;
+      }
+
+      @media (min-width: 1000px) {
+        width: 5.5rem;
+        height: 5.5rem;
+      }
+
+      @media (min-width: 1200px) {
+        width: 6rem;
+        height: 6rem;
       }
     }
 

@@ -28,10 +28,18 @@ nav {
     text-align: right;
     color: #43100A;
 
-    background-color: #d5bcad;
+    //background-color: #d5bcad;
 
     @media (min-width: 400px) {
       font-size: 20px;
+    }
+
+    @media (min-width: 800px) {
+      font-size: 22px;
+    }
+
+    @media (min-width: 1200px) {
+      font-size: 24px;
     }
   }
 
@@ -52,7 +60,7 @@ nav {
     }
 
     @media (min-width: 1200px) {
-      margin-left: 2.5rem;
+      margin-left: 2.75rem;
     }
   }
 
@@ -66,14 +74,26 @@ nav {
       width: 6.5rem;
       height: 6.5rem;
 
+      color: #FAFAFA;
       border-radius: 100%;
+    }
+
+    @media (min-width: 1000px) {
+      width: 6.75rem;
+      height: 6.75rem;
+    }
+
+    @media (min-width: 1200px) {
+      width: 7.5rem;
+      height: 7.5rem;
     }
   }
 
   nav a:nth-last-child(2) {
 
     @media (min-width: 500px) {
-      background-color: #d5bcad;
+      background-color: lighten($Blue, 5%);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%2300467f' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
 
   }
@@ -81,7 +101,8 @@ nav {
   nav a:last-child {
 
     @media (min-width: 500px) {
-      background-color: darken(#d5bcad, 20%);
+      background-color: $Red;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='49' viewBox='0 0 28 49'%3E%3Cg fill-rule='evenodd'%3E%3Cg id='hexagons' fill='%23cc1631' fill-opacity='1' fill-rule='nonzero'%3E%3Cpath d='M13.99 9.25l13 7.5v15l-13 7.5L1 31.75v-15l12.99-7.5zM3 17.9v12.7l10.99 6.34 11-6.35V17.9l-11-6.34L3 17.9zM0 15l12.98-7.5V0h-2v6.35L0 12.69v2.3zm0 18.5L12.98 41v8h-2v-6.85L0 35.81v-2.3zM15 0v7.5L27.99 15H28v-2.31h-.01L17 6.35V0h-2zm0 49v-8l12.99-7.5H28v2.31h-.01L17 42.15V49h-2z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     }
 
   }

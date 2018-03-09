@@ -19,6 +19,10 @@ header {
   @media (min-width: 600px) {
     padding: 2rem 2rem 2rem 2rem;
   }
+
+  @media (min-width: 1200px) {
+    padding: 2.75rem 2.75rem 2.75rem 2.75rem;
+  }
 }
 
   header > a {
@@ -30,7 +34,7 @@ header {
     max-width: 11rem;
 
     text-decoration: none;
-    background-color: #d5bcad;
+    //background-color: #d5bcad;
 
     @media (min-width: 400px) {
       max-width: 12rem;
@@ -43,12 +47,16 @@ header {
     @media (min-width: 800px) {
       max-width: 16rem;
     }
+
+    @media (min-width: 1200px) {
+      max-width: 18rem;
+    }
   }
 
     header > a img {
       width: 11rem;
-
-      background-color: darken(#d5bcad, 5%);
+      z-index: 9000;
+      //background-color: darken(#d5bcad, 5%);
 
       @media (min-width: 400px) {
         width: 12rem;
@@ -61,16 +69,31 @@ header {
       @media (min-width: 800px) {
         width: 16rem;
       }
+
+      @media (min-width: 1200px) {
+        width: 18rem;
+      }
     }
 
     header > a span {
-      font-size: 16px;
-      line-height: 1;
-      color: black;
+      margin-top: -0.5rem;
 
-      background-color: darken(#d5bcad, 15%);
+      font-family: "DCSCORES", sans-serif;
+      font-size: 14px;
+      line-height: 115%;
+      letter-spacing: -0.0125em;
+      text-align: right;
+      color: #43100A;
+
+      @media (min-width: 600px) {
+        margin-top: -0.5rem;
+      }
 
       @media (min-width: 800px) {
+        font-size: 18px;
+      }
+
+      @media (min-width: 1200px) {
         font-size: 20px;
       }
     }
