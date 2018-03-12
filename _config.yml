@@ -24,7 +24,7 @@ sass:
 per_page: 12
 date_format: "%b %d, %Y"
 
-gems:
+plugins:
 - jekyll-seo-tag
 - jekyll-sitemap
 exclude:
