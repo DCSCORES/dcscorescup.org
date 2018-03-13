@@ -7,18 +7,18 @@
 
   width: 100%;
 
-  background-color: pink;
+  background-color: crimson;
 
   @media (min-width: 400px) {
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   }
 
   @media (min-width: 600px) {
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2.75rem 2rem 2.75rem 2rem;
   }
 
   @media (min-width: 1200px) {
-    padding: 2.75rem 2.75rem 2.75rem 2.75rem;
+    padding: 6rem 2.75rem 6rem 2.75rem;
   }
 }
 
@@ -31,7 +31,7 @@
     @media (min-width: 1000px) {
       width: 70vw;
       font-size: 72px;
-      color: blue;
+      color: darkblue;
     }
   }
 
@@ -45,6 +45,10 @@
 
     @media (min-width: 1000px) {
       font-size: 39px;
-      color: lime;
+      color: darkgreen;
     }
+  }
+
+  .MarlboroMan p + p {
+    margin-top: 1.25rem;
   }
