@@ -26,9 +26,21 @@
 @import "_componentes/componentes.main";
 @import "_componentes/componentes.footer";
 
+@import "_componentes/componentes.heading";
+@import "_componentes/componentes.flex-block";
+@import "_componentes/componentes.large-block";
+@import "_componentes/componentes.content-block";
+@import "_componentes/componentes.text-block";
+@import "_componentes/componentes.large-text-block";
+
 @import "_componentes/componentes.baggage-carousel";
 @import "_componentes/componentes.movie-theater";
 @import "_componentes/componentes.marlboro-man";
 @import "_componentes/componentes.premier-league";
 
+@import "_utilidades/utilidades.above";
+@import "_utilidades/utilidades.below";
+@import "_utilidades/utilidades.flex-right";
+@import "_utilidades/utilidades.flex-left";
+@import "_utilidades/utilidades.flex-split";
 @import "_utilidades/utilidades.visually-hidden";
