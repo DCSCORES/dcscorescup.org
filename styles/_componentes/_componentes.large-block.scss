@@ -6,3 +6,21 @@
   position: relative;
   width: 89%;
 }
+
+.LargeBlock--aboveTheFoldSoImportant {
+  align-self: flex-start;
+  margin-top: 0;
+
+  @media (min-width: 500px) {
+    margin-top: -10rem;
+  }
+
+  @media (min-width: 600px) {
+    margin-top: -11rem;
+  }
+
+  @media (min-width: 1000px) {
+    margin-top: 0;
+    align-self: flex-end;
+  }
+}

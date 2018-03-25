@@ -4,8 +4,13 @@
 
 .TextBlock {
   margin: auto;
+  width: 88%;
 
-  @media (min-width: 900px) {
+  @media (min-width: 600px) {
+    width: 78%;
+  }
+
+  @media (min-width: 1000px) {
     width: 56%;
   }
 }

@@ -13,7 +13,7 @@ header {
   background-color: #FAFAFA;
 
   @media (min-width: 400px) {
-    padding: 1rem 1.5rem 1rem 1.5rem;
+    padding: 2rem 1.75rem 2rem 1.75rem;
   }
 
   @media (min-width: 600px) {
@@ -40,6 +40,10 @@ header {
       max-width: 12rem;
     }
 
+    @media (min-width: 500px) {
+      max-width: 13rem;
+    }
+
     @media (min-width: 600px) {
       max-width: 14rem;
     }
@@ -60,6 +64,10 @@ header {
 
       @media (min-width: 400px) {
         width: 12rem;
+      }
+
+      @media (min-width: 500px) {
+        width: 13rem;
       }
 
       @media (min-width: 600px) {
@@ -85,15 +93,15 @@ header {
       text-align: right;
       color: #43100A;
 
+      @media (min-width: 400px) {
+        font-size: 16px;
+      }
+
       @media (min-width: 600px) {
         margin-top: -0.5rem;
       }
 
       @media (min-width: 800px) {
         font-size: 18px;
-      }
-
-      @media (min-width: 1200px) {
-        font-size: 20px;
       }
     }
