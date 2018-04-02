@@ -12,8 +12,6 @@ kramdown:
   hard_wrap: false
 excerpt_separator: |2+
 
-port: 4200
-
 future: true
 permalink: pretty
 
