@@ -29,3 +29,21 @@
   -o-justify-content: center;
   justify-content: center;
 }
+
+.FlexBlock--row {
+  @media (min-width: 800px) {
+    -webkit-flex-direction: row!important;
+    -moz-flex-direction: row!important;
+    -ms-flex-direction: row!important;
+    -o-flex-direction: row!important;
+    flex-direction: row!important;
+  }
+}
+
+.FlexBlock--split {
+  justify-content: space-between!important;
+}
+
+.FlexBlock--full {
+  width: 100%;
+}

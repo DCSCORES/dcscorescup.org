@@ -3,14 +3,15 @@
 \*------------------------------------*/
 
 .TextBlock {
-  margin: auto;
-  width: 88%;
+  padding: 0 2rem 0 2rem;
+  max-width: 100%;
+  text-align: justify;
 
   @media (min-width: 600px) {
-    width: 78%;
+    max-width: 78%;
   }
 
   @media (min-width: 1000px) {
-    width: 56%;
+    max-width: 56%;
   }
 }

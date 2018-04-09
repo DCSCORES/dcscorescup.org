@@ -39,6 +39,14 @@ nav {
     }
   }
 
+  nav a.is-active {
+
+    @media (min-width: 1000px) {
+      border-bottom: 3px solid $Yellow;
+    }
+    
+  }
+
   nav a:not(:first-child) {
     margin-top: 0.5rem;
 

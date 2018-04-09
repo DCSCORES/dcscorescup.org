@@ -1,0 +1,76 @@
+/*------------------------------------*\
+    #JUMBOTRON
+\*------------------------------------*/
+
+.Jumbotron {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  width: 100%;
+  height: auto;
+  max-height: 90vh;
+  min-height: 320px;
+
+  background-color: $Blue;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:before {
+    @media (min-width: 500px) {
+      content: "";
+      position: absolute;
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(to bottom, rgba(250, 250, 250, 0.7), transparent 45%);
+    }
+  }
+
+  &:after {
+    content: "";
+    display: block;
+    padding-bottom: 56.25%;
+    height: 0;
+  }
+}
+
+  .Jumbotron-title {
+    display: none;
+    margin-bottom: -1.65rem;
+
+    font-size: 5.5rem;
+    line-height: 1;
+    color: #FAFAFA;
+
+    z-index: 9000;
+
+    @media (min-width: 400px) {
+      margin-bottom: -2rem;
+      font-size: 7rem;
+    }
+
+    @media (min-width: 600px) {
+      margin-bottom: -2.5rem;
+      font-size: 8.75rem;
+    }
+
+    @media (min-width: 800px) {
+      margin-bottom: -3rem;
+      font-size: 10rem;
+    }
+
+    @media (min-width: 1000px) {
+      margin-bottom: -3.25rem;
+      font-size: 11rem;
+    }
+
+    @media (min-width: 1200px) {
+      margin-bottom: -4rem;
+      font-size: 13rem;
+    }
+  }
