@@ -1,3 +1,128 @@
 /*------------------------------------*\
     #FOOTER
 \*------------------------------------*/
+
+.Footer {
+  position: relative;
+
+  padding: 4rem 2rem 4rem 2rem;
+  width: 100%;
+
+  background-color: #FAFAFA;
+  background-image: url(https://clearleft-v5.s3.amazonaws.com/dots/texture_corners-diamond-grey.png);
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-position: 100% 60%;
+
+  @media (min-width: 600px) {
+    padding: 4rem 2.75rem 4rem 2.75rem;
+  }
+
+  @media (min-width: 900px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+  .Footer-navigation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+    .Footer-navigation > a {
+      display: block;
+
+      margin-top: 0.25rem;
+      margin-bottom: 0.25rem;
+
+      font-family: "DCSCORES", sans-serif;
+      font-size: 22px;
+      line-height: 1;
+      text-decoration: none;
+      color: #43100A;
+
+      @media (min-width: 600px) {
+        font-size: 24px;
+      }
+    }
+
+    .Footer-navigation > a:nth-last-child(2) {
+      color: $Blue;
+    }
+
+    .Footer-navigation > a:last-child {
+      color: $Red;
+    }
+
+    .Footer-navigation > a.is-active {
+      border-bottom: 3px solid $Yellow;
+    }
+
+    .Footer-navigation > a:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+
+  .Footer-antiSocial {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+
+    @media (max-width: 900px) {
+      margin-top: 1.5rem;
+    }
+  }
+
+    .Footer-antiSocial > li {
+      display: block;
+    }
+
+    .Footer-antiSocial > li:not(:first-child) {
+      margin-left: 1.75rem;
+    }
+
+      .Footer-antiSocial > li a {
+        transition: all .15s ease;
+      }
+
+      .Footer-antiSocial > li a:hover svg {
+        transform: scale(1.1);
+      }
+
+      .Footer-antiSocial li:first-child a:hover svg {
+        fill: #1DA1F2;
+      }
+
+      .Footer-antiSocial li:nth-child(2) a:hover svg {
+        fill: #3B5998;
+      }
+
+      .Footer-antiSocial li:nth-child(3) a:hover svg {
+        fill: #C13584;
+      }
+
+      .Footer-antiSocial li:nth-child(4) a:hover svg {
+        fill: #FF0000;
+      }
+
+      .Footer-antiSocial li:nth-child(5) a:hover svg {
+        fill: #FF0084;
+      }
+
+      .Footer-antiSocial li:nth-child(6) a:hover svg {
+        fill: #0077B5;
+      }
+
+      .Footer-antiSocial svg {
+        position: relative;
+
+        width: 2rem;
+        height: 2rem;
+
+        vertical-align: middle;
+        overflow: hidden;
+
+        fill: #43100A;
+        transition: all .15s ease;
+      }

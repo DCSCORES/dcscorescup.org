@@ -2,7 +2,7 @@
     #NAV
 \*------------------------------------*/
 
-nav {
+.Navigation {
   display: flex;
   flex-direction: column;
 
@@ -15,7 +15,7 @@ nav {
   }
 }
 
-  nav a {
+  .Navigation a {
     display: block;
 
     /* Middle-alignment fix bc of font dimensions */
@@ -39,15 +39,15 @@ nav {
     }
   }
 
-  nav a.is-active {
+  .Navigation a.is-active {
 
     @media (min-width: 1000px) {
       border-bottom: 3px solid $Yellow;
     }
-    
+
   }
 
-  nav a:not(:first-child) {
+  .Navigation a:not(:first-child) {
     margin-top: 0.5rem;
 
     @media (min-width: 600px) {
@@ -68,8 +68,8 @@ nav {
     }
   }
 
-  nav a:nth-last-child(2),
-  nav a:last-child {
+  .Navigation a:nth-last-child(2),
+  .Navigation a:last-child {
     position: relative;
     display: flex;
     justify-content: center;
@@ -96,7 +96,7 @@ nav {
     }
   }
 
-  nav a:nth-last-child(2) {
+  .Navigation a:nth-last-child(2) {
 
     @media (min-width: 500px) {
       background-color: lighten($Blue, 5%);
@@ -105,7 +105,7 @@ nav {
 
   }
 
-  nav a:last-child {
+  .Navigation a:last-child {
 
     @media (min-width: 500px) {
       background-color: $Red;
@@ -115,8 +115,8 @@ nav {
   }
 
   @media (min-width: 1000px) {
-    nav a:nth-last-child(2):before,
-    nav a:last-child:before {
+    .Navigation a:nth-last-child(2):before,
+    .Navigation a:last-child:before {
       content: "";
       position: absolute;
       display: block;
@@ -134,15 +134,15 @@ nav {
       opacity: 0;
     }
 
-    nav a:nth-last-child(2):hover,
-    nav a:last-child:hover {
+    .Navigation a:nth-last-child(2):hover,
+    .Navigation a:last-child:hover {
       animation-duration: 1s;
       animation-name: destoroyah;
       animation-iteration-count: infinite;
     }
 
-    nav a:nth-last-child(2):hover:before,
-    nav a:last-child:hover:before {
+    .Navigation a:nth-last-child(2):hover:before,
+    .Navigation a:last-child:hover:before {
       animation-duration: 1s;
       animation-name: baragon;
   		animation-iteration-count: infinite;
