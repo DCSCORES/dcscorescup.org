@@ -12,7 +12,8 @@ function() {
 });
 
 function moviePoster(id) {
-  var moviePoster = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">';
+  //var moviePoster = '<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg">';
+  var moviePoster = '<img src="../images/jumbotron-about.jpg">';
   var startTheMovie = '<div></div>';
   return moviePoster.replace("ID", id) + startTheMovie;
 }

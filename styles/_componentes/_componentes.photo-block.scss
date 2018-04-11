@@ -1,0 +1,262 @@
+/*------------------------------------*\
+    #PHOTO BLOCK
+\*------------------------------------*/
+
+.PhotoBlock {
+  position: relative;
+
+  display: flex;
+
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  min-height: 300px;
+
+  background: grey;
+
+  @media (min-width: 700px) {
+    min-height: 360px;
+  }
+
+  @media (min-width: 800px) {
+    min-height: 500px;
+  }
+
+  @media (min-width: 1000px) {
+    min-height: 640px;
+  }
+
+  @media (min-width: 1200px) {
+    min-height: 760px;
+  }
+}
+
+  .PhotoBlock-moment {
+    display: flex;
+
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    min-height: 300px;
+
+    @media (min-width: 700px) {
+      min-height: 360px;
+    }
+
+    @media (min-width: 800px) {
+      min-height: 500px;
+    }
+
+    @media (min-width: 1000px) {
+      min-height: 640px;
+    }
+
+    @media (min-width: 1200px) {
+      min-height: 760px;
+    }
+  }
+
+    .PhotoBlock-momentPrimary {
+      -webkit-flex: 2;
+      -ms-flex: 2;
+      flex: 2;
+
+      background-position: 50% 50%;
+      background-size: cover;
+      background-color: lighten(black, 25%);
+
+      border-right: 2px solid #FAFAFA;
+    }
+
+    .PhotoBlock-momentSecondary {
+      display: flex;
+
+      -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+
+      -webkit-flex: 1;
+      -ms-flex: 1 1 0.000000001px;
+      flex: 1;
+
+      -webkit-flex-basis: 0.000000001px;
+      flex-basis: 0.000000001px;
+    }
+
+      .PhotoBlock-momentSecondaryTop,
+      .PhotoBlock-momentSecondaryBottom {
+        -webkit-flex: 1;
+        -ms-flex: 1 1 0.000000001px;
+        flex: 1;
+
+        -webkit-flex-basis: 0.000000001px;
+        flex-basis: 0.000000001px;
+      }
+
+      .PhotoBlock-momentSecondaryTop {
+        background-position: 50% 50%;
+        background-size: cover;
+        background-color: lighten(black, 35%);
+      }
+
+      .PhotoBlock-momentSecondaryBottom {
+        background-position: 50% 50%;
+        background-size: cover;
+        background-color: lighten(black, 45%);
+
+        border-top: 2px solid #FAFAFA;
+      }
+
+  .PhotoBlock-callout {
+    position: relative;
+
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+
+    background-color: #fec737;
+
+    opacity: 1;
+
+    @media (min-width: 700px) {
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      padding-right: 1.5rem;
+      padding-left: 1.5rem;
+    }
+
+    @media (min-width: 900px) {
+      position: absolute;
+
+      bottom: 2rem;
+      left: 2rem;
+
+      padding-top: 1.5rem;
+      padding-bottom: 1.5rem;
+      padding-right: 1rem;
+      padding-left: 1rem;
+
+      width: 360px;
+      height: 280px;
+
+      border-radius: 5px;
+      z-index: 9;
+    }
+
+    @media (min-width: 1200px) {
+      padding-top: 1.8rem;
+      padding-bottom: 1.8rem;
+      padding-right: 1.4rem;
+      padding-left: 1.4rem;
+
+      width: 400px;
+      height: 280px;
+    }
+  }
+
+  .PhotoBlock-callout--alignLeft {
+
+    @media (min-width: 900px) {
+      left: 5%!important;
+    }
+  }
+
+  .PhotoBlock-callout--alignRight {
+
+    @media (min-width: 900px) {
+      right: 5%!important;
+      left: auto!important;
+    }
+  }
+
+    .PhotoBlock-calloutTitle {
+      display: block;
+
+      margin-bottom: 1.25rem;
+      padding-bottom: 0;
+
+      font-family: "DCSCORES", sans-serif;
+      font-size: 1.5rem;
+      line-height: 1;
+      letter-spacing: -0.015em;
+      color: black;
+
+      @media (min-width: 700px) {
+        font-size: 1.5rem;
+      }
+
+      @media (min-width: 900px) {
+        margin-bottom: 2rem;
+
+        font-size: 1.6rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 1.75rem;
+      }
+    }
+
+    .PhotoBlock-calloutDescription {
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.6;
+      color: black;
+
+      @media (min-width: 900px) {
+        font-size: 0.95rem;
+      }
+
+      @media (min-width: 1200px) {
+        font-size: 1rem;
+      }
+    }
+
+    .PhotoBlock-calloutFooter {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      padding-top: 1em;
+      padding-bottom: 0;
+      padding-right: 0;
+      padding-left: 0;
+
+      width: 100%;
+
+      @media (min-width: 900px) {
+        position: absolute;
+
+        bottom: 0;
+        left: 0;
+
+        padding-right: 1em;
+        padding-left: 1em;
+        padding-bottom: 1em;
+      }
+
+      @media (min-width: 1200px) {
+        padding-right: 1.25em;
+        padding-left: 1.25em;
+      }
+    }
+
+      .PhotoBlock-calloutFooterLink {
+        display: block;
+
+        font-size: 1rem;
+        font-weight: 700;
+        line-height: 1.25;
+        text-decoration: none;
+        color: black;
+
+        border-bottom: 2px solid rgba(0, 0, 0, 0.24);
+
+        box-shadow: none;
+
+        &:hover {
+          border-bottom-color: rgba(0, 0, 0, 0.4);
+        }
+      }

@@ -2,6 +2,11 @@
 <html lang="en">
   {% include head.html %}
   <body>
+
+    {% if page.url == "/" %}
+    {% include _partials/baggage-carousel.html %}
+    {% endif %}
+
     {% include header.html %}
 
     <main role="main">

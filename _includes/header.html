@@ -6,7 +6,7 @@
   </a>
 
   <nav role="navigation">
-    <a href="/">Home</a>
+    <a href="/" {% if page.url == "/" %}class="is-active"{% endif %}>Home</a>
     <a href="/about" {% if page.url contains "about" %}class="is-active"{% endif %}>About</a>
     <a href="/teams" {% if page.url contains "teams" %}class="is-active"{% endif %}>Teams</a>
 
