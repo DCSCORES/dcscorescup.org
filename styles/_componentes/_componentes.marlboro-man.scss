@@ -7,22 +7,28 @@
 
   width: 100%;
 
-  background-color: crimson;
+  background-color: #FAFAFA;
+  background-image: url(../images/texture-dots-grey.png);
+  background-repeat: no-repeat;
+  background-size: 50rem;
+  background-position: 175% -65%;
 
   @media (min-width: 400px) {
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
   }
 
   @media (min-width: 600px) {
-    padding: 2.75rem 2rem 2.75rem 2rem;
+    padding: 4rem 2rem 4rem 2rem;
   }
 
   @media (min-width: 1200px) {
-    padding: 6rem 2.75rem 6rem 2.75rem;
+    padding: 8rem 2.75rem 8rem 2.75rem;
   }
 }
 
   .MarlboroMan h1 {
+    font-size: 34px;
+    color: #43100A;
 
     @media (min-width: 600px) {
       font-size: 6vw;
@@ -30,25 +36,36 @@
 
     @media (min-width: 1000px) {
       width: 70vw;
-      font-size: 72px;
-      color: darkblue;
+      font-size: 70px;
     }
   }
 
   .MarlboroMan p {
+    line-height: 1.4;
+    letter-spacing: -0.0125em;
+    color: lighten(#4C5051, 18%);
+
+    @media (min-width: 400px) {
+      width: 80%;
+    }
 
     @media (min-width: 600px) {
-      width: 80%;
+      width: 65%;
       font-size: 3.2vw;
-      line-height: 1.2;
     }
 
     @media (min-width: 1000px) {
-      font-size: 39px;
-      color: darkgreen;
+      font-size: 34px;
     }
   }
 
   .MarlboroMan p + p {
     margin-top: 1.25rem;
   }
+
+    .MarlboroMan p a {
+      text-decoration: none;
+      color: #B39B00;
+
+      border-bottom: 2px solid;
+    }
