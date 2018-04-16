@@ -32,6 +32,31 @@
   }
 }
 
+.PhotoBlock--cornerGradient {
+
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-image:
+    radial-gradient(
+      circle at bottom right,
+      rgba(0, 56, 102, 0.94),
+      transparent 45%
+    );
+
+    @media (max-width: 800px) {
+      display: none;
+    }
+  }
+
+}
+
   .PhotoBlock-moment {
     display: flex;
 
@@ -68,6 +93,19 @@
       background-color: lighten(black, 25%);
 
       border-right: 2px solid #FAFAFA;
+    }
+
+    .PhotoBlock-momentPrimary--stage {
+      background-position: 50% 50%;
+
+      @media (min-width: 600px) {
+        background-position: 5% 50%;
+      }
+    }
+
+    .PhotoBlock--reversed .PhotoBlock-momentPrimary {
+      border-right: none;
+      border-left: 2px solid #FAFAFA;
     }
 
     .PhotoBlock-momentSecondary {
@@ -139,7 +177,7 @@
       padding-right: 1rem;
       padding-left: 1rem;
 
-      width: 360px;
+      width: 320px;
       height: 280px;
 
       border-radius: 5px;
@@ -152,7 +190,7 @@
       padding-right: 1.4rem;
       padding-left: 1.4rem;
 
-      width: 400px;
+      width: 360px;
       height: 280px;
     }
   }
@@ -167,7 +205,7 @@
   .PhotoBlock-callout--alignRight {
 
     @media (min-width: 900px) {
-      right: 5%!important;
+      right: 2.5rem!important;
       left: auto!important;
     }
   }
@@ -182,7 +220,7 @@
       font-size: 1.5rem;
       line-height: 1;
       letter-spacing: -0.015em;
-      color: black;
+      color: darken(#43100A, 5%);
 
       @media (min-width: 700px) {
         font-size: 1.5rem;
@@ -203,7 +241,7 @@
       font-size: 0.9rem;
       font-weight: 400;
       line-height: 1.6;
-      color: black;
+      color: darken(#43100A, 5%);
 
       @media (min-width: 900px) {
         font-size: 0.95rem;
@@ -250,7 +288,7 @@
         font-weight: 700;
         line-height: 1.25;
         text-decoration: none;
-        color: black;
+        color: darken(#43100A, 5%);
 
         border-bottom: 2px solid rgba(0, 0, 0, 0.24);
 
@@ -259,4 +297,72 @@
         &:hover {
           border-bottom-color: rgba(0, 0, 0, 0.4);
         }
+      }
+
+  /* Custom flickr callout, yeah whatevs */
+  .PhotoBlock-flickr {
+    display: none;
+
+    @media (min-width: 800px) {
+      position: absolute;
+      display: block;
+
+      right: 2.5rem;
+      bottom: 2.5rem;
+
+      z-index: 9;
+    }
+
+  }
+
+    .PhotoBlock-flickr a {
+      display: block;
+      text-decoration: none;
+      transform: rotate(3deg);
+      transition: all .15s ease;
+    }
+
+    .PhotoBlock-flickr a:hover {
+      transform: scale(1.1) rotate(4deg);
+    }
+
+    .PhotoBlock-flickr a:hover span {
+      background-color: #0063dc;
+    }
+
+    .PhotoBlock-flickr a:hover svg {
+      fill: #FF0084;
+    }
+
+      .PhotoBlock-flickr a > span {
+        display: block;
+
+        padding: .15rem .25rem .15rem .25rem;
+
+        font-family: "DCSCORES", sans-serif;
+        font-size: 1.35rem;
+        line-height: 140%;
+        letter-spacing: 0.0125em;
+        color: #FFF;
+
+        border-radius: 60px 45px 30px 15px/15px 30px 45px 60px;
+        transition: all .15s ease;
+      }
+
+      .PhotoBlock-flickr a > svg {
+        position: relative;
+
+        /* No idea what... */
+        float: right;
+        margin-top: -1.5rem;
+
+        width: 3.75rem;
+        height: 3.75rem;
+
+        vertical-align: middle;
+        overflow: hidden;
+
+        fill: #FFF;
+
+        transition: all .15s ease;
       }
