@@ -47,3 +47,18 @@
 .FlexBlock--full {
   width: 100%;
 }
+
+.FlexBlock--texture {
+  background-image: url(../images/texture-dots-grey.png);
+  background-repeat: no-repeat;
+  background-size: 38rem;
+  background-position: 145% 115%;
+
+  @media (min-width: 600px) {
+    background-size: 42rem;
+  }
+
+  @media (min-width: 800px) {
+    background-size: 54rem;
+  }
+}

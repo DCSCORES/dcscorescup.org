@@ -39,6 +39,16 @@
     }
   }
 
+  .Navigation a:first-child,
+  .Navigation a:nth-child(2),
+  .Navigation a:nth-child(3) {
+    transition: transform .15s ease;
+
+    &:hover {
+      transform: translateY(-2px);
+    }
+  }
+
   .Navigation a.is-active {
 
     @media (min-width: 1000px) {

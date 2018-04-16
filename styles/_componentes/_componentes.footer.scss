@@ -42,9 +42,15 @@
       text-decoration: none;
       color: #43100A;
 
+      transition: transform .15s ease;
+
       @media (min-width: 600px) {
         font-size: 24px;
       }
+    }
+
+    .Footer-navigation > a:hover {
+      transform: translateY(-2px);
     }
 
     .Footer-navigation > a:nth-last-child(2) {
