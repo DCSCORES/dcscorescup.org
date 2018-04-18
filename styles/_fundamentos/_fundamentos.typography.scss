@@ -18,7 +18,8 @@ h2 {
 
   font-size: 1.8rem;
   line-height: 125%;
-  color: darken(#43100A, 3%);
+  //color: darken(#43100A, 3%);
+  color: darken($Blue, 5%);
 
   @media (min-width: 800px) {
     padding-bottom: 3rem;

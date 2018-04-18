@@ -28,7 +28,7 @@
 
   .MarlboroMan h1 {
     font-size: 34px;
-    color: #43100A;
+    color: darken($Blue, 5%);
 
     @media (min-width: 600px) {
       font-size: 6vw;
