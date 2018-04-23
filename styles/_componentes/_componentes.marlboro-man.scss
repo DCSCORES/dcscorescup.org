@@ -3,7 +3,8 @@
 \*------------------------------------*/
 
 .MarlboroMan {
-  padding: 1rem 1rem 1rem 1rem;
+  position: relative;
+  padding: 2rem 1rem 2rem 1rem;
 
   width: 100%;
 
@@ -14,15 +15,15 @@
   background-position: 175% -65%;
 
   @media (min-width: 400px) {
-    padding: 2rem 1.5rem 2rem 1.5rem;
+    padding: 2.5rem 1.5rem 2.5rem 1.5rem;
   }
 
   @media (min-width: 600px) {
-    padding: 4rem 2rem 4rem 2rem;
+    padding: 6rem 2rem 6rem 2rem;
   }
 
   @media (min-width: 1200px) {
-    padding: 8rem 2.75rem 8rem 2.75rem;
+    padding: 8.5rem 2.75rem 8.5rem 2.75rem;
   }
 }
 

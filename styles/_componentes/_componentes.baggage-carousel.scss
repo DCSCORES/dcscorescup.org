@@ -14,6 +14,10 @@
   background-color: #FFF;
 }
 
+.BaggageCarousel:hover .BaggageCarousel-suitcase {
+  opacity: 1;
+}
+
   .BaggageCarousel-suitcase {
     position: relative;
     margin-right: 1rem;
@@ -22,8 +26,9 @@
     width: 4rem;
     height: 4rem;
 
-    //background-color: #8C8;
     border-radius: 3px;
+    opacity: 0.45;
+    transition: opacity .15s ease;
 
     @media (min-width: 600px) {
       width: 5rem;
@@ -31,7 +36,7 @@
     }
 
     @media (min-width: 800px) {
-      margin-right: 1.25rem;
+      margin-right: 2rem;
       width: 5.25rem;
       height: 5.25rem;
     }
