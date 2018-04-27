@@ -189,14 +189,14 @@
 
   .WaterUnited a {
     display: block;
-    margin-top: 2rem;
+    margin-top: 4rem;
 
     font-family: "DCSCORES", sans-serif;
     font-size: 1.2rem;
     text-decoration: none;
-    color: #43100A;
+    color: darken(#06519C, 5%);
 
-    border-bottom: 3px solid #fd0;
+    border-bottom: 3px solid lighten(#2F8FCE, 35%);
     transition: transform .15s ease;
   }
 

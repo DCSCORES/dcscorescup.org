@@ -46,7 +46,8 @@ header {
     max-width: 11rem;
 
     text-decoration: none;
-    //background-color: #d5bcad;
+    background-color: #d5bcad;
+    z-index: 9000;
 
     @media (min-width: 400px) {
       max-width: 12rem;

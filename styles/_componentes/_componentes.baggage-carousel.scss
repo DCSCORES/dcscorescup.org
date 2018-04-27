@@ -12,6 +12,10 @@
   padding-left: 1rem;
 
   background-color: #FFF;
+
+  @media (max-width: 600px) {
+    display: none!important;
+  }
 }
 
 .BaggageCarousel:hover .BaggageCarousel-suitcase {
