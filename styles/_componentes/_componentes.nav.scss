@@ -5,6 +5,7 @@
 .Navigation {
   display: flex;
   flex-direction: column;
+  margin-left: auto;
 
   /* Overflow the video if necessary */
   z-index: 9000;

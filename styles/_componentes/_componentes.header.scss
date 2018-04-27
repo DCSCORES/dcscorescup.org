@@ -5,7 +5,6 @@
 header {
   position: relative;
   display: flex;
-  justify-content: space-between;
 
   padding: 1rem 1rem 1rem 1rem;
 
@@ -46,7 +45,7 @@ header {
     max-width: 11rem;
 
     text-decoration: none;
-    background-color: #d5bcad;
+    //background-color: #d5bcad;
     z-index: 9000;
 
     @media (min-width: 400px) {
@@ -116,5 +115,52 @@ header {
 
       @media (min-width: 800px) {
         font-size: 18px;
+      }
+    }
+
+  /* Presented by */
+  header > div {
+    position: relative;
+    align-self: flex-start;
+
+    margin-top: 1.5%;
+    margin-left: 4%;
+
+    width: 100%;
+    max-width: 7rem;
+
+    z-index: 9000;
+
+    @media (min-width: 1000px) {
+      max-width: 7rem;
+    }
+
+    @media (max-width: 800px) {
+      display: none!important;
+    }
+  }
+
+    header > div span {
+      display: block;
+
+      font-family: "DCSCORES", sans-serif;
+      font-size: 1rem;
+      line-height: 115%;
+      text-align: left;
+      color: #43100A;
+
+      @media (min-width: 1000px) {
+        font-size: 1.1rem;
+      }
+    }
+
+    header > div img {
+      float: right;
+      margin-top: -1rem;
+      max-width: 5.2rem;
+      transform: rotate(6deg);
+
+      @media (min-width: 1000px) {
+        max-width: 5.6rem;
       }
     }
