@@ -4,7 +4,7 @@ timezone: UTC
 email: your-email@domain.com
 description: Write an awesome description for your new site here.
 baseurl:
-url:
+url: https://www.dcscorescup.org
 
 markdown: kramdown
 kramdown:
