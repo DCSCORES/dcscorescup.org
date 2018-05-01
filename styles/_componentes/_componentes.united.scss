@@ -164,15 +164,15 @@
   .WaterUnited h2 {
     padding-bottom: 2rem;
 
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: darken(#06519C, 5%);
 
     @media (min-width: 600px) {
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
 
     @media (min-width: 800px) {
-      font-size: 2.4rem;
+      font-size: 2rem;
     }
 
     @media (max-width: 600px) {
@@ -184,7 +184,7 @@
 
   .WaterUnited img {
     display: block;
-    max-width: 22rem;
+    max-width: 20rem;
   }
 
   .WaterUnited a {
