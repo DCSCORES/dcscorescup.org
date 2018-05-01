@@ -6,6 +6,11 @@ description: Write an awesome description for your new site here.
 baseurl:
 url: https://www.dcscorescup.org
 
+collections:
+  teams:
+    title: Teams
+    output: false
+
 markdown: kramdown
 kramdown:
   input: GFM
