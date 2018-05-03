@@ -6,4 +6,5 @@ Description: "is a boutique management consulting firm serving the defense, aero
 Website: http://www.avascent.com/
 Logo: "/uploads/logo-avascent.png"
 Logo Size: 8
+Division: casual
 ---
