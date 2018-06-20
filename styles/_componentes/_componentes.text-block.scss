@@ -5,7 +5,6 @@
 .TextBlock {
   padding: 0 2rem 0 2rem;
   max-width: 100%;
-  text-align: justify;
 
   @media (min-width: 600px) {
     max-width: 78%;
@@ -15,3 +14,19 @@
     max-width: 48%;
   }
 }
+
+  .TextBlock p {
+    text-align: justify;
+  }
+
+  .TextBlock-important {
+    font-family: "DCSCORES", sans-serif;
+    font-size: 1.5rem;
+    line-height: 120%;
+    text-align: left;
+    color: darken($Red, 0%);
+  }
+
+    .TextBlock-important > a {
+      color: darken($Yellow, 10%);
+    }
