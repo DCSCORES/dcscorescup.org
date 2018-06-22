@@ -4,6 +4,12 @@
   <body>
 
     {% if page.url == "/" %}
+    <div class="HaveYouEverSeenTheRain">
+      <span>The DC SCORES Cup June 23 is ON and will be played in rain. See the <a href="/about">About</a> page for more.</span>
+    </div>
+    {% endif %}
+
+    {% if page.url == "/" %}
     {% include _partials/baggage-carousel.html %}
     {% endif %}
 

@@ -23,3 +23,26 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
+
+// Just for now, yeah yeah...
+.HaveYouEverSeenTheRain {
+  padding: 0.8rem 1rem 0.6rem 1rem;
+  width: 100%;
+  text-align: center;
+  background-color: darken(#fd0, 0%);
+}
+
+  .HaveYouEverSeenTheRain > span {
+    font-family: "DCSCORES", sans-serif;
+    font-size: 1rem;
+    line-height: 105%;
+    color: #43100A;
+
+    @media (min-width: 600px) {
+      font-size: 1.25rem;
+    }
+  }
+
+    .HaveYouEverSeenTheRain > span a {
+      color: inherit;
+    }
