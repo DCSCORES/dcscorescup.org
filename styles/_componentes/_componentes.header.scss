@@ -98,17 +98,14 @@ header {
     header > a span {
       font-family: "DCSCORES", sans-serif;
       font-size: 14px;
-      line-height: 115%;
+      line-height: 125%;
       letter-spacing: -0.0125em;
       text-align: right;
       color: #43100A;
 
       @media (min-width: 600px) {
         font-size: 16px;
-      }
-
-      @media (min-width: 800px) {
-        font-size: 18px;
+        line-height: 135%;
       }
     }
 
