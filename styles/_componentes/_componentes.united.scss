@@ -2,6 +2,88 @@
     #UNITED
 \*------------------------------------*/
 
+/* Move out */
+.Durban {
+  display: flex;
+  align-items: baseline;
+
+  @media (min-width: 800px) {
+    top: 4rem;
+    right: 4%;
+  }
+
+  @media (min-width: 1000px) {
+    position: absolute;
+    top: 7rem;
+    right: 5%;
+
+    margin-top: 0;
+  }
+}
+
+.District {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+  padding: 1rem 1.5rem 1rem 1.5rem;
+
+  width: 9rem;
+
+  text-decoration: none;
+  background-color: #FFF;
+  border: 2px dashed lighten(#ED4630, 20%);
+  border-radius: 5px;
+
+  transform: rotate(-3deg);
+  transition: all .15s ease;
+
+  z-index: 9000;
+
+  @media (min-width: 600px) {
+    flex-direction: column;
+    width: 10rem;
+  }
+
+  @media (min-width: 800px) {
+    width: 10rem;
+  }
+
+  @media (min-width: 1000px) {
+    width: 10rem;
+  }
+
+  @media (max-width: 800px) {
+    margin-right: 4.25rem;
+  }
+}
+
+.District:hover {
+  transform: scale(1.1) rotate(-1deg);
+}
+
+  .District img {
+    max-width: 100%;
+  }
+
+  .District span {
+    display: block;
+    margin-top: 1rem;
+
+    font-family: "DCSCORES", sans-serif;
+    font-size: 1rem;
+    line-height: 115%;
+    text-align: center;
+    color: #43100A;
+
+    @media (min-width: 400px) {
+      font-size: 1.1rem;
+    }
+  }
+
 .United {
   position: relative;
   display: flex;
@@ -25,18 +107,11 @@
   z-index: 9000;
 
   @media (min-width: 600px) {
-    position: absolute;
     flex-direction: column;
-    top: 4rem;
-    right: 4%;
-
-    margin-top: 0;
     width: 11rem;
   }
 
   @media (min-width: 800px) {
-    top: 7rem;
-    right: 5%;
     width: 12rem;
   }
 
