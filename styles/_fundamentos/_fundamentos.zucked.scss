@@ -1,3 +1,21 @@
 /*------------------------------------*\
     #ZUCKED
 \*------------------------------------*/
+
+/* Move out of here */
+.Notice {
+  margin: 3rem auto -3rem auto;
+  padding: 1rem 1rem;
+  width: 100%;
+  max-width: 32rem;
+  text-align: center;
+  background-color: transparent;
+  border: 3px dashed #fd0;
+  border-radius: 6px;
+}
+
+.Notice > span {
+  font-family: "DCSCORES", sans-serif;
+  font-size: 22px;
+  color: #360D08;
+}
