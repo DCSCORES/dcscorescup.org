@@ -23,5 +23,6 @@ function movieTheaterScreen() {
   movieTheaterScreen.setAttribute("src", "https://www.youtube.com/embed/" + this.dataset.id + "?autoplay=1");
   movieTheaterScreen.setAttribute("frameborder", "0");
   movieTheaterScreen.setAttribute("allowfullscreen", "1");
+  movieTheaterScreen.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture");
   this.parentNode.replaceChild(movieTheaterScreen, this);
 }
